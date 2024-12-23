@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Mahsulot Tafsilotlari{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{{ products.image.url }}" class="img-fluid" alt="{{products.name}}">
+        </div>
+        <div class="col-md-6">
+            <h1>{{products.name}}</h1>
+            <p class="lead">Narxi: {{products.price}}</p>
+            <p class="lead">Kategoriya: {{products.category}}</p>
+            <p>{{products.description}}</p>
+            <button class="btn btn-primary">Savatga qo'shish</button>
+           {# <button><a href="{{ product.get_delete_url }}">Delete</a></button>#}
+        </div>
+    </div>
+{% endblock %}
